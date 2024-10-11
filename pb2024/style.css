@@ -1,0 +1,212 @@
+@charset "utf-8";
+
+body {
+	width: 100%;
+	height: 100%;
+	background-image: url(image/syabon2.gif);
+	background-position: 100%;
+}
+
+#container {
+	width: 960px;
+	margin: auto;
+	padding: auto;
+	text-align: center;
+}
+
+h1 {
+	color: #906b4d;
+}
+
+nav ul:hover {
+	color: crimson;
+}
+
+nav ul li {
+	width: 20%;
+	float: left;
+	list-style-type: none;
+}
+
+nav ul li a {
+	display: block;
+	margin: 0;
+	height: 0;
+	padding-top: 5em;
+	overflow: hidden;
+}
+
+nav ul li#nav_home {
+	background-image: url(image/home.gif);
+	background-repeat: no-repeat;
+}
+
+nav ul li#nav_item {
+	background-image: url(image/item.gif);
+	background-repeat: no-repeat;
+}
+
+nav ul li#nav_canpn {
+	background-image: url(image/canpn1.gif);
+	background-repeat: no-repeat;
+}
+
+nav ul li#nav_access {
+	background-image: url(image/access.gif);
+	background-repeat: no-repeat;
+}
+
+nav ul li#nav_inquiry {
+	background-image: url(image/inquiry.gif);
+	background-repeat: no-repeat;
+}
+
+nav ul li#nav_home,
+nav ul li#nav_item,
+nav ul li#nav_canpn,
+nav ul li#nav_access,
+nav ul li#nav_inquiry {
+	background-position: center;
+	margin-bottom: 10px;
+}
+
+#main p {
+	font-weight: bold;
+	color: #906b4d;
+}
+
+.introduction {
+	display: flex;
+}
+
+.introduction p {
+	margin-top: 10px;
+}
+
+header,
+footer {
+	width: 960px;
+	background-image: url(image/syabon.gif);
+	background-position: 80%;
+	text-align: center;
+	color: #906b4d;
+	overflow: hidden;
+}
+
+header #title {
+	margin-top: -130px;
+}
+
+footer #tagetop img {
+	margin-top: 10px;
+}
+
+/*「商品について」ここから↓*/
+#item {
+	color: #906b4d;
+}
+
+#main h1 {
+	border-bottom-style: solid;
+	border-bottom-width: thick;
+}
+
+.item_group {
+	margin: 0 18px 25px 0;
+	display: flex;
+	font-size: 12px;
+	justify-content: center;
+}
+
+/*「商品について」ここまで↑*/
+
+/*「アクセスについて」ここから↓*/
+#map img {
+	float: left;
+}
+
+#main h2 {
+	color: #906b4d;
+	border-bottom-style: solid;
+	border-bottom-width: thick;
+	width: 320px;
+	float: right;
+}
+
+#main h2 p {
+	padding-bottom: 40px;
+}
+
+h3 {
+	color: #906b4d;
+	text-align: left;
+}
+
+/*「アクセスについて」ここまで↑*/
+
+/*「キャンペーンについて」ここまで↓*/
+#campaign {
+	color: #906b4d;
+	font-weight: bold;
+}
+
+#campaign h2 {
+	border-bottom-style: solid;
+	border-bottom-width: thick;
+}
+
+/*「キャンペーンについて」ここまで↑*/
+
+/*「お問い合わせページ」ここから↓*/
+#question h1 {
+	border-bottom-style: solid;
+	border-bottom-width: thick;
+}
+
+#question form {
+	float: left;
+	text-align: left;
+	padding-right: 150px;
+}
+
+#question .arom {
+	float: right;
+	display: block;
+}
+
+.column {
+	overflow: hidden;
+}
+
+#question p {
+	color: #906b4d;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#question #mess {
+	float: left;
+	text-align: left;
+	font-weight: bold;
+}
+
+#question ul li {
+	font-weight: bold;
+	color: #906b4d;
+	list-style-type: none;
+	margin-right: 160px;
+}
+
+form {
+	font-weight: bold;
+	color: #906b4d;
+	margin-left: 60px;
+}
+
+textarea {
+	width: 300px;
+	height: 100px;
+	overflow-y: scroll;
+}
+
+/*「お問い合わせページ」ここまで↑*/
