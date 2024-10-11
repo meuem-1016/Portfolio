@@ -1,0 +1,294 @@
+@charset "utf-8";
+
+
+/* -------------コンセプト領域----------------- */
+
+.concept-container h1 {
+	font-size: 50px;
+	font-family: "Kiwi Maru",
+		system-ui;
+	font-weight: normal;
+	margin: 30px;
+	text-align: center;
+}
+
+.concept-container h2 {
+	font-size: 40px;
+	font-family: "Kiwi Maru",
+		system-ui;
+	font-weight: normal;
+	margin: 0;
+	border-bottom: 3px solid;
+	border-image: linear-gradient(to right, #ff9a35 0%, #fff 100%);
+	border-image-slice: 1;
+}
+
+.imageText {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+	align-items: center;
+}
+
+.imageText-reverse {
+	flex-direction: row-reverse;
+
+}
+
+.imageText-reverse h2 {
+	border-bottom: 3px solid;
+	border-image: linear-gradient(to left, #ff9a35 0%, #fff 100%);
+	border-image-slice: 1;
+}
+
+.text {
+	padding: 10px;
+	font-family: "IBM Plex Sans JP",
+		system-ui;
+}
+
+/* タイムライン領域 */
+.history-imageText {
+	display: flex;
+	justify-content: center;
+}
+
+.timeline {
+	margin-bottom: 30px;
+}
+
+.timeline>li {
+	overflow: hidden;
+	margin: 0;
+	position: relative;
+	font-family: "IBM Plex Sans JP",
+		system-ui;
+}
+
+.timeline-date {
+	width: 110px;
+	float: left;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.timeline-content {
+	width: 75%;
+	float: left;
+	border-left: 3px #ffaa56 solid;
+	padding-left: 30px;
+}
+
+.timeline-content:before {
+	content: '';
+	width: 12px;
+	height: 12px;
+	background: #ff9a35;
+	position: absolute;
+	left: 106px;
+	top: 24px;
+	border-radius: 100%;
+}
+
+/* -------------コンセプト領域ここまで----------------- */
+
+
+/* 右からフェードイン*/
+.js-fadeRight {
+	opacity: 0;
+	visibility: hidden;
+	transform: translateX(-80px);
+	transition: opacity 3s, visibility 3s, transform 3s;
+}
+
+.js-fadeRight.inview {
+	opacity: 1;
+	visibility: visible;
+	transform: translateX(0px);
+}
+
+/* 左からフェードイン*/
+.js-fadeLeft {
+	opacity: 0;
+	visibility: hidden;
+	transform: translateX(80px);
+	transition: opacity 8s, visibility 8s, transform 8s;
+}
+
+.js-fadeLeft.inview {
+	opacity: 1;
+	visibility: visible;
+	transform: translateX(0px);
+}
+
+/* 右からフェードイン*/
+.js-fadeRight1 {
+	opacity: 0;
+	visibility: hidden;
+	transform: translateX(-80px);
+	transition: opacity 10s, visibility 10s, transform 10s;
+}
+
+.js-fadeRight1.inview {
+	opacity: 1;
+	visibility: visible;
+	transform: translateX(0px);
+}
+
+/*テキスト変化用*/
+.js-color {
+	font-size: 50px;
+	font-weight: 400;
+	color: #000066;
+	transition: font-size 1s, color 5s;
+}
+
+
+.js-color.inview {
+	font-size: 65px;
+	color: #000066;
+	transition-delay: 1s;
+}
+
+/* 右からフェードイン*/
+
+.timeline {
+	opacity: 0;
+	visibility: hidden;
+	transform: translateX(-80px);
+	transition: opacity 4s, visibility 6s, transform 1s;
+}
+
+
+.timeline.inview {
+	opacity: 1;
+	visibility: visible;
+	transform: translateX(0px);
+}
+
+/*下からフェードイン*/
+.history-image {
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(80px);
+	transition: opacity 2s, visibility 2s, transform 2s;
+}
+
+.history-image.inview {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0px);
+}
+
+/* -------------タブレット表示----------------- */
+@media screen and (max-width:1360px) {
+	.imageText {
+		display: block;
+		width: 90%;
+		height: auto;
+		margin: 0;
+	}
+
+	.concept-container h1 {
+		font-size: 2rem;
+		width: 90%;
+	}
+
+	.concept-container h2 {
+		font-size: 2rem;
+	}
+
+	.concept-container .text {
+		line-height: 2;
+
+	}
+
+	.history-imageText {
+		display: block;
+	}
+
+
+
+	.timeline-content:before {
+		display: none;
+	}
+
+	.timeline-date {
+		font-size: 2rem;
+		width: auto;
+	}
+
+	.history-image {
+		display: none;
+	}
+
+	.js-color {
+		font-size: 2em;
+		font-weight: normal;
+		color: #000066;
+		transition: none;
+	}
+
+	.js-color.inview {
+		font-size: 2em;
+		color: #000066;
+		transition-delay: none;
+	}
+}
+
+/* -------------スマホ表示----------------- */
+
+@media screen and (max-width:480px) {
+	.imageText {
+		display: block;
+		width: 90%;
+		height: auto;
+		margin: 0;
+	}
+
+	.concept-container h1 {
+		font-size: 2rem;
+		width: 90%;
+	}
+
+	.concept-container h2 {
+		font-size: 2rem;
+	}
+
+	.concept-container .text {
+		line-height: 2;
+
+	}
+
+	.history-imageText {
+		display: block;
+	}
+
+
+
+	.timeline-content:before {
+		display: none;
+	}
+
+	.timeline-date {
+		font-size: 2rem;
+		width: auto;
+	}
+
+	.history-image {
+		display: none;
+	}
+
+	.js-color {
+		font-size: 2em;
+		font-weight: normal;
+		color: #000066;
+		transition: none;
+	}
+
+	.js-color.inview {
+		font-size: 2em;
+		color: #000066;
+		transition-delay: none;
+	}
+}

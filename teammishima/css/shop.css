@@ -1,0 +1,122 @@
+/* オンライン */
+
+
+/* ナビゲーション */
+nav ul {
+	list-style: none;
+	display: flex;
+	gap: 40px;
+	margin-right: 50px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #333;
+	font-family: "Kosugi Maru",
+		system-ui;
+	font-size: 20px;
+}
+
+nav ul li a:hover {
+	color: #ffaa56;
+	transition: 0.8s;
+}
+
+/* ナビゲーション */
+
+/* ヘッダー領域 */
+
+.shop {
+	text-align: center;
+}
+
+.shop h2 {
+	text-align: left;
+	font-size: 2rem;
+	font-family: "Kosugi Maru";
+	padding: 10px;
+	border-bottom: 3px solid;
+	border-image: linear-gradient(to right, #ff9a35 0%, #fff 100%);
+	border-image-slice: 1;
+}
+
+.shop p {
+	/* height: 100px; */
+	font-family: "Kosugi Maru";
+}
+
+.car p {
+	height: 50px;
+}
+
+.shouhin {
+	display: flex;
+	justify-content: space-between;
+}
+
+form {
+	margin-top: 30px;
+}
+
+.price {
+	margin-bottom: 30px;
+}
+
+.zakka {
+	margin-top: 15px;
+}
+
+.shop_button {
+	display: inline-block;
+	border-radius: 20%;
+	font-size: 10pt;
+	text-align: center;
+	cursor: pointer;
+	padding: 12px 20px;
+	background: #ffb700;
+	color: #ffffff;
+	line-height: 1em;
+	opacity: 1;
+	transition: .3s;
+	box-shadow: 6px 6px 6px #666666;
+}
+
+.shop_button:hover {
+	box-shadow: none;
+	opacity: 0.8;
+	background-color: #ff8c00;
+}
+
+.car img:hover {
+	opacity: 0.8;
+}
+
+/* オンライン */
+@media screen and (max-width:480px) {
+	.shop {
+		max-width: 100%;
+	}
+
+	.shouhin {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.car {
+		width: 50%;
+		height: 500px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.car p {}
+
+	.price {
+		margin-top: 10px;
+		width: auto;
+	}
+
+	form {
+		margin-top: 10px;
+	}
+}

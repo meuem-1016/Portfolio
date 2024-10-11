@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@100;200;300;400;500;600;700&family=Kiwi+Maru:wght@300;400;500&family=Kosugi+Maru&family=Stick&display=swap" rel="stylesheet">
+	<!-- スライダー用css-->
+
+	<script src="https://kit.fontawesome.com/e40854b764.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/reset.css">
+	<link href="dist/hamburgers.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/ripair.css">
+	<!--font-->
+	<title>くすのき|修理</title>
+	<link rel="shortcut icon" href="images/favicon.ico" type="imge/vnd.">
+</head>
+
+<body>
+	<header class="header">
+		<div class="header-container">
+			<!--ロゴ-->
+			<h1 class="header-logo"><a href="index.html"><img src="images/logo.gif" alt="くすのき"></a></h1>
+			<!--ロゴ-->
+			<!--ナビゲーション-->
+			<button class="nav-btn hamburger hamburger-spin" onClick="document.querySelector('html').classList.toggle('open');document.querySelector('.nav-btn').classList.toggle('is-active')">
+				<span class="hamburger-container">
+					<span class="hamburger-inner"></span>
+				</span>
+				<i class="batu">×</i>
+				<span class="fa-solid fa-bars"></span>
+			</button>
+			<nav class="nav">
+				<ul>
+					<li>
+						<a href="concept.html">コンセプト</a>
+					</li>
+					<li>
+						<a href="shop.html">オンライン</a>
+					</li>
+					<li>
+						<a href="ripair.html">修理</a>
+					</li>
+					<li>
+						<a href="access.html">アクセス</a>
+					</li>
+				</ul>
+			</nav>
+		</div><!--/.header-container-->
+		<!--ナビゲーション-->
+	</header>
+	<!-- トップ画像-->
+	<div class="repair-image js-fadeBottom">
+		<img src="images/repair1.gif" alt="修理したおもちゃのBeforeと	After" class="Repair-image">
+	</div><!-- /.repair-image-->
+	<!-- トップ画像ここまで-->
+
+	<!--「 画像とテキスト」セクションここから-->
+
+	<section class="repair-imageText">
+		<div class="repair-imageText-container">
+			<figure class="image_1">
+				<div class="kendama-image">
+					<img src="images/1002367_m.jpg" alt="壊れたけん玉" width="500" height="">
+				</div><!-- /.kendama-image-->
+			</figure>
+
+			<div class="text_1">
+				<h2 class="headingDeco">壊れた</h2>
+				<p>Broken</p>
+				<p>
+					大切に、大切に使っていた木のおもちゃ。<br>
+					そのぶん、壊れてしまった時の悲しさも、<br>
+					ひとしおですよね。<br>
+					当店は、そういった想いに少しでも応えたい。<br>
+					職人が１つ１つのおもちゃと向き合い、修理いたします。
+				</p>
+			</div><!-- /.text-->
+
+		</div><!-- /.imageText-container-->
+	</section>
+
+	<section class="repair-imageText">
+		<div class="repair-imageText-container reverse">
+			<div class="text_2">
+				<h2 class="headingDeco">修理</h2>
+				<p>Repair</p>
+				<p>
+					修理を希望の方は、直接店舗にお越しください。<br>
+					その際、壊れたおもちゃか写真をご持参ください。<br>
+					おもちゃの修理ができると判断した場合、見積額と<br>
+					今後の工程についてご連絡します。<br>
+					修理によっては見積額より費用がかかることもあります。
+					予めご了承ください。<br>
+					※壊れ具合によっては受付できないことがあります。<br>
+					※当店以外でご購入の木のおもちゃの修理も承っていますが、
+					破損個所によっては修理が不可能な場合もあり<br>
+					ます。
+				</p>
+			</div><!-- /.text-->
+
+			<figure class="image_2">
+				<div class="kendama-image">
+					<img src="images/repair.jpg" alt="修理されたけん玉" width="500">
+				</div>
+			</figure>
+		</div><!-- /.imageText-container-->
+	</section>
+
+	<div class="appointment">
+		<div class="appointment-caution">
+			<h2 class="headingDeco">修理希望の方へのお願い</h2>
+			<p>
+				修理を希望される方は、ご来店の前に一度ご相談ください。<br>
+				その後のやり取りがスムーズに進みます。
+			</p>
+		</div><!-- /.appointment-caution-->
+
+		<div class="appointment-form">
+			<form action="#" method="post">
+				<p>
+					<label for="customer-name">お名前</label><br>
+					<input type="text" name="customer-name" id="customer-name" required>
+				</p>
+				<p>
+					<label for="customer-name">お名前(ふりがな)<br></label>
+					<input type="text" name="customer-name" id="customer-name" required>
+				</p>
+				<p>
+					<label> 住所<br>
+						<select name="prefecture" id="pref">
+							<option value="selected" selected>選択してください</option>
+							<optgroup label="北海道・東北地方">
+								<option value="1">北海道</option>
+								<option value="2">青森県</option>
+								<option value="3">岩手県</option>
+								<option value="4">宮城県</option>
+								<option value="5">秋田県</option>
+								<option value="6">山形県</option>
+								<option value="7">福島県</option>
+							</optgroup>
+							<optgroup label="関東地方">
+								<option value="8">茨城県</option>
+								<option value="9">栃木県</option>
+								<option value="10">群馬県</option>
+								<option value="11">埼玉県</option>
+								<option value="12">千葉県</option>
+								<option value="13">東京都</option>
+								<option value="14">神奈川県</option>
+							</optgroup>
+							<optgroup>
+
+							</optgroup>
+							<optgroup label="中部地方">
+								<option value="15">新潟県</option>
+								<option value="16">富山県</option>
+								<option value="17">石川県</option>
+								<option value="18">福井県</option>
+								<option value="19">山梨県</option>
+								<option value="20">長野県</option>
+								<option value="21">岐阜県</option>
+								<option value="22">静岡県</option>
+								<option value="23">愛知県</option>
+							</optgroup>
+							<optgroup label="近畿地方">
+								<option value="24">三重県</option>
+								<option value="25">滋賀県</option>
+								<option value="26">京都府</option>
+								<option value="27">大阪府</option>
+								<option value="28">兵庫県</option>
+								<option value="29">奈良県</option>
+								<option value="30">和歌山県</option>
+							</optgroup>
+							<optgroup label="中国地方">
+								<option value="31">鳥取県</option>
+								<option value="32">島根県</option>
+								<option value="33">岡山県</option>
+								<option value="34">広島県</option>
+								<option value="35">山口県</option>
+							</optgroup>
+							<optgroup label="四国地方">
+								<option value="36">徳島県</option>
+								<option value="37">香川県</option>
+								<option value="38">愛媛県</option>
+								<option value="39">高知県</option>
+							</optgroup>
+							<optgroup label="九州・沖縄地方">
+								<option value="40">福岡県</option>
+								<option value="41">佐賀県</option>
+								<option value="42">長崎県</option>
+								<option value="43">熊本県</option>
+								<option value="44">大分県</option>
+								<option value="45">宮崎県</option>
+								<option value="46">鹿児島県</option>
+								<option value="47">沖縄県</option>
+							</optgroup>
+						</select>
+				</p>
+				<p>
+					<input type="text" name="city" placeholder="市区町村名 (例:沼津市)"><br>
+					<input type="text" name="street address" placeholder="番地・ビル名">
+				</p>
+				</label>
+				<p>
+					<label>電話番号<br>
+						<input type="tel" name="phone" id="phone" required>
+					</label>
+				</p>
+				<p>
+					<label for="mail">メールアドレス<br></label>
+					<input type="email" name="mail" id="mail" required>
+				</p>
+				<p>
+					<label> ご来店希望日時<br>
+						<input type="text" name="appointment-day" placeholder="(例)2024.10.10 15:00" required>
+					</label>
+				</p>
+				<p>
+					<label for="breakdown-message"> 故障内容</label><br>
+					<textarea name="breakdown-text" id="breakdown-message" placeholder="(例)汽車の車両が外れてしまった"></textarea>
+				</p>
+				<p>
+					<label for="other-consultation">その他ご相談項目</label><br>
+					<textarea name="consultation" id="other-consultation" placeholder="(例)孫の誕生日に間に合わせたい"></textarea>
+				</p>
+				<p>
+					<label for="image-file">写真を添付してください(任意)</label><br>
+					<input type="file" name="image-file" id="image-file">
+				</p>
+				<p><input type="submit" value="アップロード"></p>
+				<p>
+					<input type="submit" value="送信" class="btn">
+				</p>
+				</tbody>
+				</table>
+			</form>
+
+		</div><!-- /.appointment-form-->
+	</div><!-- /.appointment-->
+	<div><!-- /.Repair-->
+		<!--「 画像とテキスト」セクションここまで-->
+</body>
+
+<!-- フッター領域 -->
+<footer class="footer">
+	<div class="footer-container">
+		<nav class="footer-menu">
+			<ul>
+				<li>
+					<a href="">会社概要</a>
+				</li>
+				<li>
+					<a href="">特定商取引法</a>
+				</li>
+				<li>
+					<a href="">個人情報の取り扱い</a>
+				</li>
+				<li>
+					<a href="">サービス案内</a>
+				</li>
+				<li>
+					<a href="">お問い合わせ</a>
+				</li>
+			</ul>
+		</nav><!--/.footer-menu-->
+		<ul class="footer-sns">
+			<li>
+				<a href="#">
+					<i class="fa-brands fa-square-x-twitter"></i>
+					<span class="sr-only">Twitter</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa-brands fa-square-facebook"></i>
+					<span class="sr-only">Facebook</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa-brands fa-square-instagram"></i>
+					<span class="sr-only">Instagram</span>
+				</a>
+			</li>
+		</ul><!--/.footer-sns-->
+
+		<p>
+			&copy;2024 くすのき
+		</p>
+
+
+
+	</div><!--/.footer-container-->
+</footer>
+<!--*********JavaScript**********-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script src="js/jquery.inview.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/slick-custom.js"></script>
+<script src="js/ripair.js"></script>
+<!--*********JavaScript**********-->
+
+</html>

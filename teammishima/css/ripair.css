@@ -1,0 +1,293 @@
+@charset "utf-8";
+
+/*基本*/
+
+
+body {
+	font-family: "Kosugi Maru",
+		system-ui;
+}
+
+p {
+	line-height: 2.0;
+
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+/*基本*/
+
+/*repair画像*/
+.repair-image {
+	width: 700px;
+	margin: 10px auto 0 auto;
+	padding: 30px 0 30px 80px;
+}
+
+/*repair画像*/
+
+/*画像とテキスト*/
+
+.repair-imageText {
+	margin: 30px 0 30px 0;
+	padding: 60px 30px 0px 30px;
+}
+
+.repair-imageText:nth-of-type(2) {
+	padding-top: 40px;
+}
+
+.repair-imageText {
+	display: flex;
+	/*flex-direction: -reverse;*/
+	width: 900px;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.text_1 {
+	padding-left: 30px;
+	width: 620px;
+}
+
+.text_2 {
+	/*	padding-left: 10px;*/
+	width: 700px;
+}
+
+.image_1 {
+	width: 600px;
+	padding-right: 50px;
+}
+
+.image_2 {
+	width: 700px;
+	padding-left: 80px;
+}
+
+.headingDeco {
+	font-size: 20px;
+	font-family: "Kosugi Maru",
+		system-ui;
+}
+
+
+.headingDeco::after {
+	content: '';
+	display: block;
+	width: 280px;
+	height: 0px;
+	border-top: 3px solid;
+	border-image: linear-gradient(to Right, #ff9a35 0%, #fff 100%);
+	border-image-slice: 1;
+}
+
+.headingDeco+p {
+	margin-top: 5px;
+	margin-bottom: 10px;
+	font-size: 17px;
+}
+
+
+
+/*画像とテキスト*/
+
+/*フォーム*/
+.appointment {
+	margin: 40px auto 0 auto;
+	width: 900px;
+	padding: 0px 50px 50px 450px;
+}
+
+.appointment-caution {
+	margin: 0 auto;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="file"] {
+	width: 50%;
+	height: 40px;
+	border-radius: 10px;
+	border: 1px solid #333;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+textarea {
+	border: 1px solid #333;
+	border-radius: 10px;
+	width: 50%;
+	height: 60px;
+	font-size: 20px;
+	margin-top: 10px;
+	;
+}
+
+input[type="submit"] {
+	border-radius: 5px;
+	border: 1px solid #333;
+	font-size: 20px;
+	transition: 1.0s;
+}
+
+input[type="submit"]:hover {
+	background-color: bisque;
+}
+
+.btn {
+	margin: 10px 0 0 90px;
+	;
+}
+
+/*フォーム*/
+
+/*下からフェードイン*/
+.js-fadeBottom {
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(80px);
+	transition: opacity 2s, visibility 2s, transform 2s;
+}
+
+.js-fadeBottom.inview {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0px);
+}
+
+/*右からフェードイン*/
+.image_1 {
+	opacity: 0;
+	visibility: hidden;
+	transform: translateX(-80px);
+	transition: opacity 2s, visibility 2s, transform 2s;
+}
+
+.image_1.inview {
+	opacity: 1;
+	visibility: visible;
+	transform: translateX(0px);
+}
+
+/* 左からフェードイン*/
+.text_1 {
+	opacity: 0;
+	visibility: hidden;
+	transform: translateX(80px);
+	transition: opacity 2s, visibility 2s, transform 2s;
+}
+
+.text_1.inview {
+	opacity: 1;
+	visibility: visible;
+	transform: translateX(0px);
+}
+
+/*上からフェードイン*/
+.text_2 {
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(-80px);
+	transition: opacity 2s, visibility 2s, transform 2s;
+}
+
+.text_2.inview {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0px);
+}
+
+/*下からフェードイン*/
+.image_2 {
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(80px);
+	transition: opacity 2s, visibility 2s, transform 2s;
+}
+
+.image_2.inview {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0px);
+}
+
+/* 下からフェードイン*/
+.appointment {
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(80px);
+	transition: opacity 2s, visibility 2s, transform 2s;
+}
+
+.appointment.inview {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0px);
+}
+
+@media (max-width: 480px) {
+
+	.repair-image {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		padding-left: 15px;
+		padding-top: 10px;
+	}
+
+	.repair-imageText-container {
+		display: block;
+	}
+
+	.text_1 {
+		width: 350px;
+		padding-left: 20px;
+	}
+
+	.text_2 {
+		width: 350px;
+	}
+
+	.image_1 {
+		width: 300px;
+		height: 300px;
+		padding-left: 20px;
+		padding-right: 0;
+		margin-left: 10px;
+	}
+
+	.image_2 {
+		width: 300px;
+		height: 300px;
+		padding-left: 20px;
+		padding-right: 0;
+		margin-left: 10px;
+		margin-top: 30px;
+	}
+
+	.repair-imageText {
+		padding-left: 10px;
+		margin-left: 10px;
+		width: 350px;
+	}
+
+	.appointment {
+		padding-left: 10px;
+	}
+
+	.appointment-form {
+		width: 750px;
+		padding-left: 20px;
+	}
+}

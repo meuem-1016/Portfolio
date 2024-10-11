@@ -1,0 +1,533 @@
+@charset "utf-8";
+
+
+/* ヘッダー領域 */
+.header {
+	height: 90px;
+	font-size: 25px;
+	font-family: "Kosugi Maru",
+		system-ui;
+	background-color: #ffefd5;
+	color: #333;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	opacity: 80%;
+}
+
+.header-logo img {
+	width: 160px;
+	height: 75px;
+	margin-left: 20px;
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+
+/* ナビゲーション */
+nav ul {
+	list-style: none;
+	display: flex;
+	gap: 40px;
+	margin-right: 50px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #333;
+	font-family: "Kosugi Maru",
+		system-ui;
+	font-size: 20px;
+}
+
+nav ul li a:hover {
+	color: #ffaa56;
+	transition: 0.8s;
+}
+
+/* ナビゲーション */
+
+/* ヘッダー領域 */
+
+
+/* メイン領域*/
+.slide-item img {
+	width: 100%;
+	height: auto;
+}
+
+/* コンセプト領域 */
+.imageText-container {
+	display: flex;
+	justify-content: center;
+	height: 600px;
+	margin-bottom: 80px;
+}
+
+.imageText-container-reverse {
+	flex-direction: row-reverse;
+}
+
+.text {
+	width: 600px;
+	padding: clamp(60px, 7vw, 100px) 0;
+	margin: 0;
+	font-family: "IBM Plex Sans JP",
+		system-ui;
+	font-size: 18px;
+}
+
+
+
+.imageText-container h2 {
+	font-size: 40px;
+	font-family: "Kiwi Maru",
+		system-ui;
+	font-weight: normal;
+	margin: 0;
+	border-bottom: 3px solid;
+	border-image: linear-gradient(to right, #ff9a35 0%, #fff 100%);
+	border-image-slice: 1;
+	display: flex;
+	justify-content: space-between;
+}
+
+.imageText-container-reverse h2 {
+	border-bottom: 3px solid;
+	border-image: linear-gradient(to left, #ff9a35 0%, #fff 100%);
+	border-image-slice: 1;
+}
+
+.imageText-container h2 i {
+	color: #ffaa56;
+	align-self: end;
+
+}
+
+/* 新作情報領域 */
+.news {
+	width: 700px;
+	margin: 30px auto;
+
+}
+
+.news h2 {
+	text-align: left;
+	font-size: 30px;
+	font-family: "Kosugi Maru";
+	border-bottom: #ff8c00 3px solid;
+	padding: 10px;
+	color: #333;
+
+}
+
+.news ul {
+	padding: 0 0 10px 0;
+}
+
+.news ul li {
+	list-style-type: none;
+	border-bottom: 1px solid #333;
+	padding: 20px 0;
+	width: 700px;
+	font-family: "IBM Plex Sans JP",
+		system-ui;
+}
+
+.news ul li:first-of-type {
+	padding-top: 0;
+}
+
+.news ul li a {
+	text-decoration: none;
+	color: #333;
+}
+
+.news ul li a:hover {
+	text-decoration: none;
+	color: #ff9a35;
+	transition: 0.8s;
+}
+
+.news ul li time {
+	font-weight: bold;
+	padding: 0 20px;
+}
+
+.news h2 i {
+	color: #ffaa56;
+}
+
+/* 修理（ヒーロー）領域 */
+
+.hero {
+	display: grid;
+}
+
+.hero>* {
+	grid-area: 1/1;
+	margin-bottom: 20px;
+}
+
+.hero>img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+.hero-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.hero h1 {
+	margin-bottom: 42px;
+	color: #333;
+	font-family: "Kosugi Maru",
+		system-ui;
+	font-weight: 400;
+	font-size: clamp(48px, 5vw, 68px);
+	min-height: 0vw;
+	line-height: 0;
+	text-align: center;
+
+}
+
+.hero a {
+	text-decoration: none;
+	font-family: "Kosugi Maru",
+		system-ui;
+
+}
+
+
+/****ボタン****/
+
+
+.btn,
+.btn-news,
+.btn-hero {
+	display: block;
+	width: 300px;
+	padding: 10px;
+	box-sizing: border-box;
+	border-radius: 8px;
+	background-color: #ffb700;
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+.btn a,
+.btn-news a,
+.btn-hero a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	text-shadow: 0 0 4px rgba(0, 0, 0, 32);
+	font-family: "Kosugi Maru";
+}
+
+.btn:hover,
+.btn-news:hover,
+.btn-hero:hover {
+	background-color: #ff8c00;
+	transition: 0.8s;
+}
+
+/* *****メニューボタン***** */
+
+.nav-btn {
+	padding: 0;
+	border: none;
+	outline: none;
+	background: transparent;
+	cursor: pointer;
+	color: #333;
+	font-size: 25px;
+	width: 40px;
+}
+
+.open .nav-btn {
+	z-index: 110;
+	color: #333;
+}
+
+.nav-btn .fa-bars {
+	display: revert;
+}
+
+.open .nav-btn .fa-bars {
+	display: none;
+}
+
+.nav-btn .batu {
+	display: none;
+}
+
+.open .nav-btn .batu {
+	display: revert;
+}
+
+@media (min-width: 1130px) {
+	.nav-btn {
+		display: none;
+	}
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after,
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+	background-color: currentColor;
+}
+
+/* *****スマホメニュー***** */
+@media (max-width: 1130px) {
+	.nav {
+		position: fixed;
+		inset: 0 -100% 0 100%;
+		z-index: 100;
+		background-color: #fff;
+		transition: transform 0.3s;
+	}
+
+	.open .nav {
+		transform: translate(-100%, 0);
+	}
+
+	.nav ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		gap: 40px;
+		color: #fff;
+	}
+}
+
+/* フッター領域 */
+.footer {
+	background-color: #ffefd5;
+	height: 90px;
+}
+
+.footer-container {
+	width: 550px;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+
+
+.footer-menu ul {
+	margin: 0;
+
+}
+
+.footer ul {
+	list-style: none;
+	display: flex;
+	gap: 24px;
+	padding: 0;
+}
+
+.footer ul li a {
+	font-size: 14px;
+}
+
+.footer ul li a i:hover {
+	color: #ffaa56;
+	transition: 0.8s;
+}
+
+.footer-sns {
+	width: 100px;
+	padding: 0;
+	margin: 0 auto;
+}
+
+
+
+.fa-brands {
+	font-size: 2em;
+}
+
+.footer p {
+	text-align: center;
+	margin: 0;
+}
+
+.footer ul li i {
+	color: #333;
+}
+
+/* スマホ */
+
+@media screen and (max-width:480px) {
+	.header {
+		width: auto;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	.concept {
+		height: 50%;
+	}
+
+	.imageText-container {
+		display: block;
+		height: auto;
+		margin: 0;
+	}
+
+	.imageText-container h2 {
+		font-size: 30px;
+		font-family: "Kiwi Maru",
+			system-ui;
+		font-weight: normal;
+		margin: 0;
+		border-bottom: 3px solid;
+		border-image: linear-gradient(to right, #ff9a35 0%, #fff 100%);
+		border-image-slice: 1;
+	}
+
+	.text {
+		width: 100%;
+		text-align: left;
+		padding: 0;
+	}
+
+	.news {
+		width: 100%;
+		text-align: left;
+		font-size: 1rem;
+	}
+
+	.news ul {
+		padding: 0;
+	}
+
+	.news ul li {
+		list-style-type: none;
+		border-bottom: 1px solid #333;
+		padding: 0;
+		width: 100%;
+		font-family: "IBM Plex Sans JP",
+			system-ui;
+	}
+
+	footer {
+		width: 100%;
+	}
+
+	.footer-container {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.footer ul {
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		text-align: center;
+	}
+
+	.footer ul li a {
+		font-size: 8px;
+	}
+}
+
+/* タブレット */
+
+@media screen and (max-width:1130px) {
+	.header {
+		width: auto;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	.concept {
+		height: 50%;
+	}
+
+	.imageText-container {
+		display: block;
+		height: auto;
+		margin: 0;
+	}
+
+	.imageText-container h2 {
+		font-size: 30px;
+		font-family: "Kiwi Maru",
+			system-ui;
+		font-weight: normal;
+		margin: 0;
+		border-bottom: 3px solid;
+		border-image: linear-gradient(to right, #ff9a35 0%, #fff 100%);
+		border-image-slice: 1;
+	}
+
+	.text {
+		width: 100%;
+		text-align: left;
+		padding: 0;
+	}
+
+	.news {
+		width: 100%;
+		text-align: left;
+		font-size: 1rem;
+	}
+
+	.news ul {
+		padding: 0;
+	}
+
+	.news ul li {
+		list-style-type: none;
+		border-bottom: 1px solid #333;
+		padding: 0;
+		width: 100%;
+		font-family: "IBM Plex Sans JP",
+			system-ui;
+	}
+
+	footer {
+		width: 100%;
+	}
+
+	.footer-container {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.footer ul {
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		text-align: center;
+	}
+
+	.footer ul li a {
+		font-size: 8px;
+	}
+}

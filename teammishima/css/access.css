@@ -1,0 +1,160 @@
+/* アクセス */
+
+.access {
+	text-align: center;
+	line-height: 2em;
+}
+
+.access_btn {
+	display: block;
+	width: 300px;
+	padding: 10px;
+	box-sizing: border-box;
+	border-radius: 8px;
+	background-color: #ffb700;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	text-shadow: 0 0 4px rgba(0, 0, 0, 32);
+	font-family: "Kosugi Maru";
+}
+
+
+
+.access_btn:hover {
+	background-color: #ff8c00;
+	transition: 0.8s;
+}
+
+.access_container {
+	text-align: center;
+	margin: 20px 0 30px 0;
+	font-family: "IBM Plex Sans JP",
+		system-ui;
+
+}
+
+.access_container h3,
+.access-map h3 {
+	font-family: "Kosugi Maru";
+	font-size: 30px;
+	border-bottom: #ffb700 2px solid;
+	padding-bottom: 10px;
+	width: 50%;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	color: #333;
+	text-align: center;
+}
+
+.access-map {
+	margin-bottom: 30px;
+}
+
+.access_graph {
+	display: block;
+	float: left;
+	width: 50%;
+	padding-left: 15%;
+}
+
+
+
+.access_graph th {
+	border-bottom: 1px dotted #333;
+	text-align: right;
+	font-family: "Kosugi Maru";
+	color: #333;
+
+}
+
+.access_graph td {
+	border-bottom: 1px dotted #333;
+	padding-left: 3rem;
+	text-align: left;
+	font-family: "IBM Plex Sans JP",
+		system-ui;
+
+}
+
+.iframe_wrap {
+	overflow: hidden;
+	padding-right: 15%;
+}
+
+/* アクセス */
+
+@media screen and (max-width:480px) {
+	.access {
+		width: auto;
+	}
+
+	.access_graph {
+		width: 100%;
+		padding: 0;
+	}
+
+	.access_graph th {
+		border-bottom: 1px dotted #333;
+		text-align: center;
+		font-size: 12px;
+		width: 60px;
+		font-family: "Kosugi Maru";
+		color: #333;
+	}
+
+	.access_graph td {
+		border-bottom: 1px dotted #333;
+		padding-left: 10px;
+		text-align: left;
+		font-family: "IBM Plex Sans JP",
+			system-ui;
+		;
+	}
+}
+
+@media screen and (max-width:1370px) {
+	.access {
+		width: auto;
+	}
+
+	.access_graph {
+		width: 100%;
+		padding: 0;
+		margin: 0 auto;
+		float: none;
+	}
+
+	.access_graph tbody {
+		display: block;
+		width: 100%;
+	}
+
+	.access_graph tr {
+		width: 100%;
+		display: flex;
+	}
+
+
+
+	.access_graph th {
+		border-bottom: 1px dotted #333;
+		text-align: left;
+		font-size: 12px;
+		width: 30%;
+		font-family: "Kosugi Maru";
+		color: #333;
+	}
+
+	.access_graph td {
+		border-bottom: 1px dotted #333;
+		padding-left: 10px;
+		text-align: left;
+		font-family: "IBM Plex Sans JP",
+			system-ui;
+		width: 70%;
+	}
+}
