@@ -1,0 +1,280 @@
+@charset "utf-8";
+
+html* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width:960px;
+  margin: 0 auto;
+}
+
+header {
+  /*background-color:#7bd7d2;*/
+  height:120px;
+  line-height:32px;
+}
+
+header h1 a {
+  display:block;
+  height:50px;
+  position:absolute;
+  width: 700px;
+}
+
+header h1 {
+  position:relative;
+}
+
+.logo {
+  width: 960px;
+  hight: 150px;
+  font-size: 0;
+  background:url("../images/site_name2.jpg");
+  background-repeat: no-repeat;
+  background-position: left 45% top 50%;
+  /*background-size: 960px 150px;*/
+}
+
+.header-container {
+  position: relative;
+}
+
+.header-logo {
+  position: absolute;
+  left: 250px;
+  bottom: 20px;
+}
+
+/*ナビゲーション*/
+h1 {
+  color:#ffefd5;
+  padding: 60px;
+  font-size:40px;
+}
+
+nav {
+  background-color: #7bd7d2;
+}
+
+.nav-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px 0 10px;
+}
+
+.global-nav {
+  display:flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 5px 10px 10px 10px;
+  flex-flow: row;
+}
+
+.globalnav li {
+  flex: 0 0 20%;     
+}
+	
+.global-nav li a {
+  display:block;
+  padding: 0 20px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 100%;
+  color: #f0f8ff;
+}
+
+.global-nav li a:hover {
+  color: #6495ed;
+  border-bottom:5px solid #6495ed;
+} 
+
+main {
+  background-color: #f1dfaf;
+}
+
+.hero-image:hover {
+  opacity: 0.5;
+}
+
+.main-contents {
+  display: flex;
+  margin:10px 0 5px 10px;
+  padding:10px 0 10px 10px;
+}
+
+.sidebar {
+  margin: 15px 20px 15px 10px;
+  padding: -10px;
+  height: 350px;
+  /*background-color: #fffafa;*/
+  border-radius: 10px;
+}
+.mainbar {
+  margin:0 10px 0 10px;
+  background-color: #ffffff;
+  padding: 0 10px 0 10px;
+  position: relative;
+}
+
+.copy {
+  position: absolute;
+  width: 750px;
+  left: 10px;
+  bottom: 25px;
+  background: #d77b80;
+  opacity: 0.7;
+  text-align: center;
+}
+
+.copy a {
+  text-decoration: none;
+  color: #fffafa;
+}
+
+.main-contents2 {
+  display: flex;
+  margin:10px 0 30px 90px; 
+}
+
+.mainpic p {
+  margin:5px 8px 10px 35px;
+  padding-left: 35px;
+}
+
+.mainpic2 p {
+  margin:5px 8px 10px 40px;
+  padding-left: 35px;
+}
+
+.mainpic3 p {
+  margin:5px 8px 10px 40px;
+  padding-left: 35px;
+}
+
+.towel-image:hover {
+  opacity: 0.8;
+}
+
+.brush-image:hover {
+  opacity: 0.8;
+}
+
+.aroma-image:hover {
+  opacity: 0.8;
+}
+
+/*サイドバー記事*/
+
+.sidebar h2 {
+  margin: 10px auto 10px auto;
+  text-align: center;
+  font-size:20px;
+  color: #d77b80;
+  font-family: "HGP創英角ﾎﾟｯﾌﾟ体";
+}
+
+.subnav {
+  margin: 0;
+  padding: 0;  
+  list-style: none;
+  border-top: 3px dashed #b0c4de;
+  text-align: center;
+  width:100px;
+}
+
+.subnav li {
+  padding: 15px 0 2px 0;
+  border-bottom: 1px dashed #b0c4de;
+}
+
+.subnav li a {
+  text-decoration: none;
+  color: #696969;
+}
+
+
+.subnav li a:hover {
+  color: #ffd700;
+}
+/*お知らせ*/
+
+.news-container h2{
+  margin-bottom: 10px;
+  margin-top: 0px;
+  margin-left: 100px;
+  padding-left: 100px;
+  font-family: "Freestyle Script";
+  font-weight: normal;
+  font-size: 40px;
+}
+
+.aboutnews-container {
+  padding: 0px 10px 5px 30px;
+  background-color: #fffafa;
+  /*border-radius: 25px;*/
+  width: 600px;
+  margin: 0 40px 0 200px; 
+  height: 200px;
+  overflow-y: scroll;
+}
+
+
+.aboutnews-container dl {
+  display: flex;
+  margin: 0;
+  padding: 5px 0; 
+  border-top: 1px dashed #dcdcdc; 
+  width: 550px;
+}
+
+.aboutnews-container dl:last-child {
+  border-bottom :1px dashed #dcdcdc; 
+}
+
+.aboutnews-container dt {
+  margin: 10px 0 10px 10px;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.aboutnews-container dd {
+  font-size: 15px;
+  line-height: 1.5;
+  padding-top:10px;
+}
+
+.detail:hover {
+  color: #d77b80;
+}
+/*フッター*/
+
+footer {
+  background-color:#7bd7d2;
+  line-height:32px;
+}
+
+
+.footer-nav {
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  }
+
+.footer-nav li {
+  color: #fffff0;
+}
+
+
+.copyright {
+   font-size: 14px;
+   margin-left: 35px;
+   /*padding-left: 35px;*/
+}

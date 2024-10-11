@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+.main-contents2a {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.lead::first-line {
+  color: #d77b80;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.lead {
+  margin-top: 18px;
+  margin-bottom: 0;
+  padding-top: 18px;
+}
+
+.canpain-content {
+  margin-top: 12px;
+  line-height: 1.8;
+}
+
+strong {
+  background: linear-gradient(transparent 55%,#ffd700 55%,#ffd700 100%);
+}

@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+.header-logo {
+  position: absolute;
+  bottom: 25px;
+}
+
+header {
+  
+}
+
+h1 {
+  width: 300px;
+  height: 5px;
+  background-color: #4169e1;
+  color: #ffffff;
+  text-align: center;
+}
+
+.global-nav {
+  margin-top: 10px;
+}
+
+.mainbar {
+  width: 700px;
+}
+
+.mainbar-container ul {
+  display: flex; 
+  list-style: none;
+}
+
+.mainbar-container ul li {
+  width: 80px;
+  height: 30px;
+}
+
+.mainbar-container ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: center;
+}
+
+.mainbar-container ul li a:hover {
+  background-color: #d77b80;
+}
+
+:target {
+  background-color: #7bd7d2;
+}
+
+table {
+  border-collapse: collapse;
+  width: 700px;
+  border: 2px solid #d77b80;
+}
+
+td {
+  /*border: 2px solid #d77b80;*/
+  text-align: center;
+  padding: 5px 0 5px 0;
+  border-bottom: 1px dashed #c0c0c0;
+  border-left: 2px solid #d77b80;
+}
+
+th {
+  background-color: #FFB6C1;
+  border-bottom: 1px dashed #c0c0c0;
+  font-weight: normal;
+}
+
+tr:hover {
+  background-color: #FFE4E1;
+  cursor: default;
+}
+
+.greeting {
+  line-height: 2;
+}
+
+strong {
+  background: linear-gradient(transparent 55%,#ffd700 55%,#ffd700 100%);
+}
+
+.access-content {
+  line-height: 1.8;
+}
+
+ 
+/*.float-block {
+  background-color: #F0FFFF;
+  border-radius: 5px; 
+}*/
+
+.company-information {
+  height: 0px;
+  padding-top: 0;
+}
