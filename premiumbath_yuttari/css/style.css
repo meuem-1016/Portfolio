@@ -1,0 +1,212 @@
+charset UTF-8;
+/* ---トップ--- */
+/* ---共通--- */
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #ffe9e9;
+}
+/* body {
+	background-image: url("../images/bg-p1.gif");
+	background-size: auto;
+	background-repeat: repeat;
+} */
+p,li,th,td {
+	font-family: "Century","MS P明朝",serif;
+}
+a {
+	font-weight: bolder;
+}
+a:hover {
+	position:relative;
+	top: 2px;
+	left: 2px;
+}
+.wrapper {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+/* ---共通--- */
+
+/* ---header--- */
+header {
+	height: 160px;
+	overflow: hidden;
+	background-image: url("../images/logo1.gif");
+	background-size:100px 100px;
+	background-position: top left;
+	background-repeat: no-repeat;
+	border-bottom: 1pt solid #336699;
+}
+header h1 {
+	line-height: 0;
+	margin-bottom: 0;
+	padding-left: 120px;
+	padding-bottom: 0;
+}
+header h2 {
+	line-height: 0;
+	margin-top: -15px;
+	padding-top: 0;
+	text-align: right;
+}
+/* ---header--- */
+
+/* ---route--- */
+#route {
+	margin-bottom: -31px;
+}
+#route ol {
+	list-style-type: none;
+	border-bottom: 1px solid #336699;
+	padding-bottom: 1em;
+}
+#route ol li {
+	display: inline;
+	margin-right: 5px;
+}
+/* ---route--- */
+
+/* ---nav--- */
+nav {
+	width: 240px;
+}
+/* ---nav--- */
+
+/* ---main--- */
+main {
+	min-height: 500px;
+	width: 960px;
+	border-right: 1px solid #336699;
+	padding-bottom: 1em;
+}
+main .photo {
+	padding: 20px;
+	background-color: #66cc66;
+}
+main section {
+	height: 480px;
+	overflow: hidden;
+}
+main h2 {
+	font-family: serif;
+	font-weight: bold;
+	font-size:28pt;
+	color: #336699;
+}
+main h3 {
+	font-family: serif;
+	font-size:18pt;
+	color: #336699;
+	padding-bottom;0px;
+}
+main p {
+	text-indent: 1em;
+}
+main ul li {
+	list-style-type: none;
+}
+.campaign {
+	background-color: rgba(255,255,255,0.7);
+	width: 840px;
+	height: 330px;
+	border: 2px solid #336699;
+	overflow-y: scroll;
+}
+.campaign p {
+	padding-bottom: 15px;
+	border-bottom: 2px dashed #336699;
+}
+/* ---main--- */
+
+/* ---footer--- */
+footer {
+	text-align: center;
+	border-top: 1px solid #336699;
+}
+footer img {
+	margin-right: 15px;
+}
+/* ---footer--- */
+
+/* ---class関連--- */
+.float_right {
+	float: right;
+}
+.float_left {
+	float: left;
+}
+.floatend {
+	clear: both;
+}
+/* ---class関連--- */
+/* ---トップ--- */
+
+/* ---アクセス--- */
+
+/* ---アクセス--- */
+
+/* ---商品紹介--- */
+main#product h3 {
+	margin-top: -30px;
+}
+table,th,td {
+	border: 1px solid #336699;
+}
+table th, table td {
+	background-color: rgba(255,255,255,0.7);
+}
+table caption {
+	text-align: left;
+	text-indent: 1em;
+}
+main .pass {
+	text-indent: 0;
+	text-align: center;
+}
+main .pass img {
+	width: 150px;
+	padding: 0;
+}
+table thead {
+	text-align: center;
+}
+table tbody img {
+	width: 157px;
+	padding: 5px;
+}
+table .col_name {
+	width: 90px;
+}
+table .col_image {
+	text-align: center;
+	width: 170px;
+}
+table .col_caption {
+	width: 500px;
+}
+table .col_price {
+	width: 120px;
+}
+.to_top {
+	text-align: right;
+}
+.flex {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+.item {
+	width: 200px;
+	margin: 0 20px 20px 20px;
+}
+
+.item img {
+	text-align: center;
+	width: 170px;
+}
+/* ---商品紹介--- */
