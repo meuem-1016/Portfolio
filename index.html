@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<title>Webクリエイター科｜トップページ</title>
+	<meta charset="utf-8">
+	<link href="layout.css" rel="stylesheet">
+	<script>
+		//--------------- LOCALIZEABLE GLOBALS---------------
+		var d = new Date();
+		monthname = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+		//Ensure correct for language. English is "January 1, 2004"
+		var TODAY = monthname[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+		//--------------- END LOCALIZEABLE   ---------------
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="header">
+			<h1>
+				Webクリエイター科｜トップページ
+			</h1>
+		</div>
+		<div id="pathlist">
+			<script>
+				document.write(TODAY);
+			</script>
+		</div>
+		<div id="sidebar">
+			&nbsp;
+		</div>
+		<div id="main">
+
+			<div class="gnavi">
+				<p>Photoshop 制作物</p>
+			</div>
+			<div class="cel">
+				<ul>
+					<li><a href="gallery/catch.html" target="_blank">キャッチコピー<br>「Sweetsコレクション」</a></li>
+					<li><a href="gallery/cosme.html" target="_blank">バナー<br>「女性コスメ」</a></li>
+				</ul>
+			</div>
+
+
+			<div class="gnavi">
+				<p>個人制作 「Premium&nbsp;Bath」</p>
+			</div>
+			<div class="sel">
+				<ul>
+					<li><a href="ex_bath_no6j/index.html" target="_blank">ex_bath_no6j</a></li>
+					<li><a href="pb_msy/index.html" target="_blank">pb_msy</a></li>
+					<li><a href="pb2024/index.html" target="_blank">pb2024</a></li>
+					<li><a href="pbpb/index.html" target="_blank">pbpb</a></li>
+					<li><a href="premium_bath_site/index.html" target="_blank">premium_bath_site</a></li>
+					<li><a href="premiumbath_yuttari/index.html" target="_blank">premiumbath_yuttari</a></li>
+					<li><a href="u.s_bath/index.html" target="_blank">u.s_bath</a></li>
+				</ul>
+			</div>
+
+
+			<div class="gnavi">
+				<p>グループ制作 「くすのき」</p>
+			</div>
+			<div class="sel">
+				<ul>
+					<li><a href="mmm/index.html" target="_blank">MMM</a></li>
+					<li><a href="teammishima/index.html" target="_blank">チーム三島</a></li>
+				</ul>
+			</div>
+
+			<div id="footer">
+				<p>※このページでご紹介しているサイトは、講義の中でたてられたものです。<br>
+					掲載されている内容に関するお問い合わせ、お申し込みは一切、行っておりません。 </p>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
