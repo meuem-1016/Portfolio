@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+.low {
+	padding: 50px 0;
+
+	h2 {
+		font-size: 1.5em;
+		margin-top: 50px;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		line-height: 3em;
+	}
+
+
+	p,
+	li {
+		margin-left: 2em;
+	}
+
+	p:last-of-type {
+		line-height: 6em;
+	}
+
+	table,
+	tr,
+	th,
+	td {
+		padding: 10px;
+		vertical-align: top;
+	}
+}

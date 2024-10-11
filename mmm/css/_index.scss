@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+/* ヒーローイメージ */
+
+.hero {
+	box-sizing: border-box;
+	aspect-ratio: 16 / 9;
+	max-height: calc(100vh - 50px);
+	margin: 0 auto;
+}
+
+.hero img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+/* index_content */
+
+.index_content {
+	padding-top: 60px;
+
+	img {
+		width: 100%;
+		border-radius: 0 150px;
+		box-shadow: 10px 10px 16px #b6b6b6;
+	}
+
+	.image3 {
+		border-radius: 50%;
+	}
+
+	p {
+		margin-bottom: 1.5em;
+		text-indent: 1em;
+		font-size: clamp(12px, 2vw, 16px);
+	}
+}
+
+.index_content:last-child {
+	padding-bottom: 30px;
+}
+
+@media (min-width:768px) {
+	.index_content {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		gap: 5%;
+
+		img {
+			width: 60%;
+		}
+	}
+
+	.index_reverse {
+		flex-direction: row-reverse;
+	}
+}

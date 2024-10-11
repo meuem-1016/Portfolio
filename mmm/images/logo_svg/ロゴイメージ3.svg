@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-4 {
+        fill: #f8a57f;
+        font-family: Tenshokk-M-90ms-RKSJ-H, HOT-Tenshokk;
+      }
+
+      .cls-4, .cls-5, .cls-3 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-5 {
+        fill: #45858e;
+      }
+
+      .cls-6 {
+        letter-spacing: -.1em;
+      }
+
+      .cls-6, .cls-7 {
+        font-size: 55px;
+      }
+
+      .cls-8 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-2 {
+        fill: #f2e0c1;
+      }
+
+      .cls-3 {
+        stroke-width: 5px;
+      }
+
+      .cls-9 {
+        font-size: 72px;
+        letter-spacing: -.3em;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="226.02" y="264.34" width="239.61" height="124.23"/>
+    </clipPath>
+  </defs>
+  <g id="_レイヤー_5" data-name="レイヤー 5">
+    <rect class="cls-5" x="226.02" y="271.81" width="240" height="88.19"/>
+  </g>
+  <g id="_レイヤー_2" data-name="レイヤー 2">
+    <rect class="cls-2" x="226.02" y="276.15" width="240" height="80"/>
+  </g>
+  <g id="_レイヤー_3" data-name="レイヤー 3">
+    <g class="cls-8">
+      <g>
+        <circle class="cls-3" cx="253.21" cy="260.77" r="33.59"/>
+        <circle class="cls-3" cx="324.23" cy="260.77" r="33.59"/>
+        <circle class="cls-3" cx="395.25" cy="260.77" r="33.59"/>
+        <circle class="cls-3" cx="466.28" cy="260.77" r="33.59"/>
+        <circle class="cls-3" cx="217.7" cy="298.49" r="33.59"/>
+        <circle class="cls-3" cx="288.72" cy="298.49" r="33.59"/>
+        <circle class="cls-3" cx="359.74" cy="298.49" r="33.59"/>
+        <circle class="cls-3" cx="430.76" cy="298.49" r="33.59"/>
+        <circle class="cls-3" cx="253.21" cy="336.21" r="33.59"/>
+        <circle class="cls-3" cx="324.23" cy="336.21" r="33.59"/>
+        <circle class="cls-3" cx="395.25" cy="336.21" r="33.59"/>
+        <circle class="cls-3" cx="466.28" cy="336.21" r="33.59"/>
+        <circle class="cls-3" cx="217.7" cy="373.93" r="33.59"/>
+        <circle class="cls-3" cx="288.72" cy="373.93" r="33.59"/>
+        <circle class="cls-3" cx="359.74" cy="373.93" r="33.59"/>
+        <circle class="cls-3" cx="430.76" cy="373.93" r="33.59"/>
+      </g>
+    </g>
+  </g>
+  <g id="_レイヤー_4" data-name="レイヤー 4">
+    <rect class="cls-2" x="236.23" y="291.21" width="210.72" height="51.04" rx="9.02" ry="9.02"/>
+  </g>
+  <g id="_レイヤー_1" data-name="レイヤー 1">
+    <text class="cls-4" transform="translate(231.4 342.25)"><tspan class="cls-9" x="0" y="0">く</tspan><tspan class="cls-6" x="50.4" y="-6.46">す</tspan><tspan class="cls-7" x="99.9" y="-6.46">のき</tspan></text>
+  </g>
+</svg>
