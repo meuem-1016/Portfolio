@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+body {
+	background-image: url("../images/back5.jpg");
+	background-repeat: no-repeat;
+	width: 960px;
+	height: 0 auto;
+	margin: 0 auto 0 auto;
+	text-align: center;
+}
+
+img {
+	clip-path: inset(0 round 10px 10px 10px 10px)
+}
+
+.container {
+	width: 960px;
+	height: 0 auto;
+}
+
+header {
+	opacity: 0.8;
+	margin-bottom: 30px;
+}
+
+h1,
+h2,
+h3 {
+	border-bottom: 1px dotted;
+	overflow: hidden;
+}
+
+h1,
+h2 {
+	font-family: "ＭＳ Ｐ明朝";
+}
+
+p {
+	font-size: 18px;
+}
+
+nav ul {
+
+	list-style-type: none;
+	margin: 10px auto 10px auto;
+	padding: 0;
+	width: 960px;
+	overflow: hidden;
+}
+
+nav ul li {
+	display: block;
+	width: 120px;
+	height: 65px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 35px;
+	float: left;
+	overflow: hidden;
+}
+
+nav ul li a {
+	display: inline-block;
+	width: auto;
+	overflow: hidden;
+}
+
+dl {
+	margin-bottom: 10px;
+}
+
+dt {
+	float: left;
+	margin-bottom: 15px;
+}
+
+main {
+	background-color: #fff;
+	opacity: 0.9;
+	width: 960px;
+	height: auto;
+	padding: 0;
+	overflow: hidden;
+}
+
+.face,
+.insta,
+.x,
+.line {
+	margin-right: 30px;
+}
+
+footer {
+	clear: both;
+	width: 960px;
+	padding: 3px 3px 3px 3px;
+	height: 0 auto;
+	opacity: 0.9;
+	background-color: #f2ce8f;
+	text-align: center;
+}
+
+#pagetop {
+	margin-bottom: 0;
+	float: right;
+}
+
+nav ul li#nav_menu a:hover,
+nav ul li#nav_promotion a:hover,
+nav ul li#nav_season a:hover,
+nav ul li#nav_access a:hover,
+nav ul li#nav_inquiry a:hover {
+	width: 130px;
+	margin: 10px;
+}
+
+#menu #nav_menu a,
+#promotion #nav_promotion a,
+#season #nav_season a,
+#access #nav_access a,
+#inquiry #nav_inquiry a,
+nav ul li a:hover {
+	background-position: 0 -60px;
+}
+
+/* menu */
+#menulist {
+	text-align: center;
+}
+
+#menu_top {
+	line-height: 1em;
+	border-bottom: 1px dotted;
+}
+
+main ul {
+	display: block;
+	padding-left: 0;
+}
+
+main ul li {
+	width: 960px;
+	list-style-type: none;
+	text-align: center;
+}
+
+.center h2 {
+	line-height: 2.5em;
+}
+
+.center p {
+	font-size: 18px;
+	line-height: 2.5em;
+}
+
+.moji {
+	border-bottom: 1px solid;
+}
+
+.end {
+	font-size: 27px;
+	text-align: center;
+	font-family: "ＭＳ Ｐ明朝";
+}
+
+
+/* inquiry */
+input[required] {
+	background-color: #ffcccc;
+}
+
+input[type="email"] {
+	width: 220px;
+}
+
+input[type="submit"] {
+	margin: 20px 0 20px 0;
+}
